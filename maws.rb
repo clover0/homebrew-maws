@@ -1,19 +1,21 @@
 class Maws < Formula
-  version '0.0.3'
+  VERSION = '0.0.4'
+  version VERSION
   homepage 'https://github.com/clover0/maws'
+
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clover0/maws/releases/download/v0.0.3/maws_0.0.3_darwin_arm64.tar.gz"
-      sha256 "7bbee49a62ed36e62173ad42dbc11fc7b5a7d2ee6d7d9802c61bae1b8a59596d"
+      url "https://github.com/clover0/maws/releases/download/v#{VERSION}/maws_#{VERSION}_darwin_arm64.tar.gz"
+      sha256 "afef13b146d0d8c4f602c6ebbfa4f14d926623930d8014a87453b4135615c204"
 
       def install
         bin.install "cgapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clover0/maws/releases/download/v0.0.3/maws_0.0.3_darwin_amd64.tar.gz"
-      sha256 "957d0420042e82182a50dac5ca0637b52202cfc9ef73f62c7806a7be1887749f"
+      url "https://github.com/clover0/maws/releases/download/v#{VERSION}/maws_#{VERSION}_darwin_amd64.tar.gz"
+      sha256 "968f42fa1bc4bc529be1a15e7f700aa5bd92465bd2752ba306619c3f9b58fcce"
 
       def install
         bin.install "cgapp"
@@ -23,11 +25,11 @@ class Maws < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/clover0/maws/releases/download/v0.0.3/maws_0.0.3_linux_amd64.tar.gz"
-      sha256 "ba33c0991abfe45a2953371f64116fd13838e107cd4373516af97b754fb6f77a"
+      url "https://github.com/clover0/maws/releases/download/v#{VERSION}/maws_#{VERSION}_linux_amd64.tar.gz"
+      sha256 "968f42fa1bc4bc529be1a15e7f700aa5bd92465bd2752ba306619c3f9b58fcce"
 
       def install
-        bin.install "cgapp"
+        bin.install "maws"
       end
     end
   end

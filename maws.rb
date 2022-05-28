@@ -15,7 +15,7 @@ class Maws < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/clover0/maws/releases/download/v#{VERSION}/maws_#{VERSION}_darwin_amd64.tar.gz"
-      sha256 "80faf52c7d05528cf6955e51ae136ca477537b5a8c6a101d272fc5fedc7c6c5c"
+      sha256 "968f42fa1bc4bc529be1a15e7f700aa5bd92465bd2752ba306619c3f9b58fcce"
 
       def install
         bin.install "cgapp"

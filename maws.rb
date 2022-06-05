@@ -10,7 +10,7 @@ class Maws < Formula
       sha256 "afef13b146d0d8c4f602c6ebbfa4f14d926623930d8014a87453b4135615c204"
 
       def install
-        bin.install "cgapp"
+        bin.install "maws"
       end
     end
     if Hardware::CPU.intel?
@@ -18,7 +18,7 @@ class Maws < Formula
       sha256 "968f42fa1bc4bc529be1a15e7f700aa5bd92465bd2752ba306619c3f9b58fcce"
 
       def install
-        bin.install "cgapp"
+        bin.install "maws"
       end
     end
   end
